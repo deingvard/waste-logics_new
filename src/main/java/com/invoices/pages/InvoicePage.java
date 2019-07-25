@@ -19,7 +19,7 @@ public class InvoicePage extends BasePageObject {
         super(driver, log);
     }
 
-    private String pageUrl = "file:///Users/admin/Downloads/Company%20invoices%20-%20Waste%20Logics_mhtml.htm";
+    private String pageUrl = "localhost";
 
     /**
      * Open InvoicePage with it's url
