@@ -10,7 +10,7 @@ public class InvoicePage extends BasePageObject {
     private By invoiceAddress = By.xpath("//td[text()='146566']/ancestor::tr[@class='gl-1']");
     private By grade = By.xpath("//td[text()='146566']/following::tbody[1]");
     private By weight = By.xpath("//td[text()='146566']/following::tbody[1]");
-    private By company = By.xpath("//*[@id='MyYardDisclosure9577009378082']//td[text()='OUT-14301']/parent::tr/td[text()='TEST CUSTOMER']");
+    private By company = By.xpath("//td[text()='OUT-14301']/parent::tr/td[text()='TEST CUSTOMER']");
     private By priceEntityFlatCharge = By.xpath("//td[text()='146566']/following::tbody[2]");
     private By priceEntityPerTonne = By.xpath("//td[text()='146566']/following::tbody[3]");
     private By priceEntityItem = By.xpath("//td[text()='146566']/following::tbody[5]");
@@ -19,7 +19,7 @@ public class InvoicePage extends BasePageObject {
         super(driver, log);
     }
 
-    private String pageUrl = "localhost";
+    private String pageUrl = "file:///Users/admin/Downloads/Company%20invoices%20-%20Waste%20Logics_mhtml.htm";
 
     /**
      * Open InvoicePage with it's url
