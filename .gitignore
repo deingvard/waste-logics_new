@@ -1,2 +1,6 @@
 # Project exclude paths
 /target/
+/test-output/
+/waste-logics.iml/
+/.idea/
+/.settings/
