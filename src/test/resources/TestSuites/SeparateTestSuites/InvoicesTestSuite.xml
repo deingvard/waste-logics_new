@@ -2,7 +2,7 @@
 
 <suite name="InvoicesTestSuite" verbose="1">
 
-    <test name="EditorTests">
+    <test name="InvoicesTests">
         <classes>
             <class name="com.invoices.tabletests.InvoicesTests"/>
         </classes>
