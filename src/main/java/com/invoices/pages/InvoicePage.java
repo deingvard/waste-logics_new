@@ -6,14 +6,17 @@ import org.openqa.selenium.WebDriver;
 
 public class InvoicePage extends BasePageObject {
 
-    private By orderId = By.xpath("//*[contains(text(),'146566')]");
-    private By invoiceAddress = By.xpath("//td[text()='146566']/ancestor::tr[@class='gl-1']");
-    private By grade = By.xpath("//td[text()='146566']/following::tbody[1]");
-    private By weight = By.xpath("//td[text()='146566']/following::tbody[1]");
-    private By company = By.xpath("//td[text()='OUT-14301']/parent::tr/td[text()='TEST CUSTOMER']");
-    private By priceEntityFlatCharge = By.xpath("//td[text()='146566']/following::tbody[2]");
-    private By priceEntityPerTonne = By.xpath("//td[text()='146566']/following::tbody[3]");
-    private By priceEntityItem = By.xpath("//td[text()='146566']/following::tbody[5]");
+    private String orderIdNumber = "146566";
+    private String invoiceNumber = "OUT-14301";
+
+    private By orderId = By.xpath("//*[contains(text(),'" + orderIdNumber + "')]");
+    private By invoiceAddress = By.xpath("//td[text()='" + orderIdNumber + "']/ancestor::tr[@class='gl-1']");
+    private By grade = By.xpath("//td[text()='" + orderIdNumber + "']/following::tbody[1]");
+    private By weight = By.xpath("//td[text()='" + orderIdNumber + "']/following::tbody[1]");
+    private By company = By.xpath("//td[text()='" + invoiceNumber + "']/parent::tr");
+    private By priceEntityFlatCharge = By.xpath("//td[text()='" + orderIdNumber + "']/following::tbody[2]");
+    private By priceEntityPerTonne = By.xpath("//td[text()='" + orderIdNumber + "']/following::tbody[3]");
+    private By priceEntityItem = By.xpath("//td[text()='" + orderIdNumber + "']/following::tbody[5]");
 
     public InvoicePage(WebDriver driver, Logger log) {
         super(driver, log);
